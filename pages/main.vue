@@ -1,11 +1,15 @@
 <template>
   <div>
-    <p>넉스트 시작하기</p>
+    <p>메인 페이지입니다.</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+
 }
 </script>
+
+<style scoped>
+
+</style>
