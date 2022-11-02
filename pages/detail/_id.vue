@@ -6,7 +6,7 @@
       <img :src="product.imageUrl" :alt="product.name" />
       <p>name : {{ product.name }}</p>
       <p>price : {{ product.price }}</p>
-      <button @click=""></button>
+      <button @click="addToCart">Add To Cart</button>
     </div>
 
   </div>
@@ -21,6 +21,12 @@ export default {
     const product = response.data;
     return { product }
   },
+  methods: {
+    addToCart() {
+      this.$router.push('/cart');
+    },
+  },
+
   created() {
     console.log(this.$route.params.id);
   }

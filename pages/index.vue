@@ -10,6 +10,9 @@
           <span>{{ product.price }}</span>
         </li>
       </ul>
+      <div class="cart-wrapper">
+        <button class="btn" @click="routeToCartPage">장바구니 바로가기</button>
+      </div>
     </main>
   </div>
 </template>
@@ -43,6 +46,10 @@ export default {
     moveToDetailPage(id) {
       console.log(id);
       this.$router.push(`detail/${id}`);
+    },
+
+    routeToCartPage() {
+      this.$router.push('/cart');
     },
 
     async searchProducts() {
